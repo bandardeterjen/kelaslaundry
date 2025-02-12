@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+}
+
+.about-us, .why-choose-us, .pricing, .cta, .faq, .testimonials, .gallery {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 300px;
+    border-radius: 5px;
+}
+
+.price-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.price-card button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.cta {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.cta button {
+    background: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.faq-item {
+    margin: 1rem 0;
+}
+
+.faq-question {
+    background: #f4f4f4;
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-answer {
+    background: #eaeaea;
+    padding: 0.5rem;
+    display: none;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+
+.slide {
+    background: #f4f4f4;
+    padding: 1rem;
+    flex: 0 0 300px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .features, .price-table {
+        flex-direction: column;
+    }
+}
